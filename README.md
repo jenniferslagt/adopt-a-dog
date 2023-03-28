@@ -1,1 +1,1 @@
-# adopt-a-dog
+# Adopt a dog app (IN PROGRESS)
