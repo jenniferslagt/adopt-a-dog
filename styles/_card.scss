@@ -1,0 +1,79 @@
+.card {
+	width: 25rem;
+	box-shadow: 0 0.5rem 1.25rem rgba($black, 0.1);
+	border-radius: $radius-2;
+	.card-img {
+		width: 100%;
+		height: 15rem;
+		object-fit: cover;
+		border-radius: $radius-2;
+	}
+	.card-content {
+		padding: $spacing-3;
+		.card-title {
+			color: $blue-darker;
+			font-size: $size-3;
+			margin-bottom: $spacing-2;
+			.gender-icon {
+				margin-left: $spacing-1;
+			}
+		}
+		.card-tags {
+			display: flex;
+			font-size: $size-1;
+			white-space: nowrap;
+			margin-bottom: $spacing-4;
+			.card-tag {
+				background: $grey;
+				padding: $spacing-1 $spacing-2;
+				border-radius: $radius-1;
+				&:not(:first-child){
+					margin-left: $spacing-2;
+				}
+				&.tag-age {
+					background-color: $blue-light;
+					color: $blue;
+				}
+				&.tag-location {
+					background-color: $green-light;
+					color: $green;
+				}
+				&.tag-vaccination {
+					background-color: $purple-light;
+					color: $purple;
+				}
+				.tag-icon {
+					margin-right: $spacing-1;
+				}
+			}
+		}
+		.card-btn-container {
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-evenly;
+			.card-btn {
+				font-size: $size-2;
+				font-weight: $weight-bold;
+				padding: $spacing-2;
+				border-radius: $radius-3;
+			}
+			.dislike-btn, .like-btn {
+				width: 2.5rem;
+				height: 2.5rem;
+			}
+			.dislike-btn {
+				background-color: $red-light;
+				color: $red;
+			}
+			.adopt-btn {
+				background-color: $blue-darker;
+				color: $white;
+				width: 10rem;
+			}
+			.like-btn {
+				background-color: $pink-light;
+				color: $pink;
+			}
+		}
+	}
+}
