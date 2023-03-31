@@ -6,6 +6,7 @@ An app (made for mobile) where you can possibly adopt a dog! Choose a dog breed,
 Even though I started with making a simple design in Figma, this project is mainly focused on learning how to work with an API!
 
 ## Practices
+* ES6 modules
 * API
 * Fetch & Promises
 * Async await
