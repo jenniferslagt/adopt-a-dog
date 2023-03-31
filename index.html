@@ -9,9 +9,53 @@
 	<!-- Import Font Awesome icons -->
 	<script src="https://kit.fontawesome.com/eed36a5c47.js" crossorigin="anonymous"></script>
 </head>
-<body>
-	<h1>Adopt a dog</h1>
+
+<body class="adopt-a-dog-container">
+	<article>
+		<header class="header">
+			<img src="images/logo.png" class="logo" alt="Adopt a dog logo">
+		</header>
+	</article>
+
+	
+	<!-- Start section dropdown filter -->
+	<section class="section has-margin-top">
+		<div class="dropdown">
+			<label class="dropdown-label" for="dog-breed-select">Breed</label>
+			<select class="dropdown-select" name="pets" id="dog-breed-select">
+				<option value="">Choose your favorite breed</option>
+				<option value="border-collie">Border collie</option>
+				<option value="bulldog">Bulldog</option>
+				<option value="chihuahua">Chihuahua</option>
+				<option value="french-bulldog">French Bulldog</option>
+				<option value="german-shepherd">German Shepherd</option>
+				<option value="golden-retriever">Golden Retriever</option>
+			</select>
+		</div>
+	</section>
+	<!-- End section dropdown filter-->
+
+	<!-- Start section card -->
+	<section class="section">
+		<article class="card">
+			<img src="images/example-dog.png" class="card-img" alt="Image of dog">
+			<div class="card-content">
+				<h1 class="card-title">Kiara<span class="fa-solid fa-venus gender-icon"></span></h1>
+				<div class="card-tags">
+					<div class="card-tag tag-age"><span class="fa-solid fa-calendar-days tag-icon"></span>2 years</div>
+					<div class="card-tag tag-location"><span class="fa-solid fa-location-dot tag-icon"></span>10 km away</div>
+					<div class="card-tag tag-vaccination"><span class="fa-solid fa-syringe tag-icon"></span>Vaccinated</div>
+				</div>
+				<footer class="card-btn-container">
+					<button class="card-btn dislike-btn"><span class="fa-solid fa-xmark btn-icon"></span></button>
+					<button class="card-btn adopt-btn">Adopt me!</button>
+					<button class="card-btn like-btn"><span class="fa-solid fa-heart btn-icon"></span></button>
+				</footer>
+			</div>
+		</article>
+	</section>
+	<!-- End section card-->
 
 	<script src="app.js"></script>
-</body>
+</bodyclass="adopt-a-dog-container>
 </html>

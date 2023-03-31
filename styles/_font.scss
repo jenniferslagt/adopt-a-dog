@@ -12,3 +12,8 @@ $size-5: 2rem; 			// 32px
 $weight-light: 200;
 $weight-normal: 400;
 $weight-bold: 600;
+
+body {
+	font-family: 'Poppin', sans-serif;
+	font-weight: $weight-light;
+}

@@ -1,0 +1,15 @@
+.dropdown {
+	display: flex;
+	flex-wrap: wrap;
+	width: 25rem;
+	.dropdown-label {
+		color: $blue-darker;
+		font-size: $size-1;
+		font-weight: $weight-bold;
+		width: 100%;
+	}
+	.dropdown-select {
+		font-size: $size-2;
+		margin-top: $size-1;
+	}
+}
