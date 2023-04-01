@@ -18,3 +18,4 @@ Even though I started with making a simple design in Figma, this project is main
 * [Pet Adoption App Design](https://dribbble.com/shots/20605820-Pet-Adoption-App-Design)
 * [Pet Adoption App](https://dribbble.com/shots/15307281-Pet-Adoption-App)
 * [public-apis/public-api: A collective list of free APIs](https://github.com/public-apis/public-apis)
+* [Dog API](https://dog.ceo/dog-api/)
