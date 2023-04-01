@@ -1,5 +1,5 @@
 // Import modules
-import { consoleMessage } from './test.js'
+import { fetchAndRenderData } from './dropdown.js'
 
 // Execute functions
-consoleMessage();
+fetchAndRenderData();
