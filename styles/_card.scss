@@ -11,6 +11,7 @@
 	.card-content {
 		padding: $spacing-3;
 		.card-title {
+			display: flex;
 			color: $blue-darker;
 			font-size: $size-3;
 			margin-bottom: $spacing-2;

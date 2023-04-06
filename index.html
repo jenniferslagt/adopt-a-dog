@@ -29,13 +29,18 @@
 	<!-- Start section card -->
 	<section class="section">
 		<article class="card">
-			<img src="images/example-dog.png" class="card-img" alt="Image of dog">
+			<div class="js-card-img">
+				<img src="images/example-dog.png" class="card-img" alt="Image of dog">
+			</div>
 			<div class="card-content">
-				<h1 class="card-title">Kiara<span class="fa-solid fa-venus gender-icon"></span></h1>
+				<h1 class="card-title">
+					<div class="dog-name">Kiara</div>
+					<span class="fa-solid fa-venus gender-icon"></span>
+				</h1>
 				<div class="card-tags">
-					<div class="card-tag tag-age"><span class="fa-solid fa-calendar-days tag-icon"></span>2 years</div>
-					<div class="card-tag tag-location"><span class="fa-solid fa-location-dot tag-icon"></span>10 km away</div>
-					<div class="card-tag tag-vaccination"><span class="fa-solid fa-syringe tag-icon"></span>Vaccinated</div>
+					<div class="card-tag tag-age"><span class="fa-solid fa-calendar-days tag-icon"></span><span class="tag-text">2 years</span></div>
+					<div class="card-tag tag-location"><span class="fa-solid fa-location-dot tag-icon"></span><span class="tag-text">10 km away</span></div>
+					<div class="card-tag tag-vaccination"><span class="fa-solid fa-syringe tag-icon"></span><span class="tag-text">Vaccinated</span></div>
 				</div>
 				<footer class="card-btn-container">
 					<button class="card-btn dislike-btn"><span class="fa-solid fa-xmark btn-icon"></span></button>
