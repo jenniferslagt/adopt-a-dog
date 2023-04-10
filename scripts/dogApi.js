@@ -1,4 +1,5 @@
 const $dropdown = document.querySelector('.dropdown');
+const $card = document.querySelector('.card');
 
 // NOTE: THIS IS THE MODERN APPROACH OF WORKING WITH PROMISES
 const fetchAndRenderData = async () => {
@@ -39,14 +40,22 @@ const loadByBreed = async (selectedBreed) => {
 }
 
 const changeImage = (images) => {
-	const $card = document.querySelector('.card');
 	const $cardImage = $card.querySelector('.js-card-img');
 
 	$cardImage.innerHTML = `
 	<img src="${images[0]}" class="card-img" alt="Image of dog">
 	`
-}
 
+	const $changeCardBtns = $card.querySelectorAll('.js-change-card');
+	$changeCardBtns.forEach(btn => {
+		btn.addEventListener('click', () => {
+			const random = Math.floor(Math.random() * images.length);
+			$cardImage.innerHTML = `
+			<img src="${images[random]}" class="card-img" alt="Image of dog">
+			`
+		});
+	});
+}
 
 // Note: you can only use default export to export one thing in a file
 // Use curly brackets for standard exports and imports, not for default exports

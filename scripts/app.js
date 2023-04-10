@@ -1,7 +1,7 @@
 // Import modules
 import { fetchAndRenderData } from './dogApi.js'
-import { updateCardContent } from './updateCard.js'
+import { updateOnClick } from './updateCard.js'
 
 // Execute functions
 fetchAndRenderData();
-updateCardContent();
+updateOnClick();
