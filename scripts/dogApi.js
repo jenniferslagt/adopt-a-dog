@@ -54,21 +54,28 @@ const loadByBreed = async (selectedBreed) => {
 
 const changeImage = (images) => {
 	const $cardImage = $card.querySelector('.js-card-img');
+	let i = 0;
 
 	$cardImage.innerHTML = `
-	<img src="${images[0]}" class="card-img" alt="Image of dog">
+	<img src="${images[i]}" class="card-img" alt="Image of dog">
 	`
 
 	const $changeCardBtns = $card.querySelectorAll('.js-change-card');
 	$changeCardBtns.forEach(btn => {
 		btn.addEventListener('click', () => {
-			// Set time out to compensate with the animation duration
-			setTimeout(() => {
-				const random = Math.floor(Math.random() * images.length);
-				$cardImage.innerHTML = `
-				<img src="${images[random]}" class="card-img" alt="Image of dog">
-				`
-			}, 1200);
+			if (i >= 0 && i < images.length - 1) {
+				i++;
+				let nextImage = images[i];
+
+				// Set time out to compensate with the animation duration
+				setTimeout(() => {
+					$cardImage.innerHTML = `
+					<img src="${nextImage}" class="card-img" alt="Image of dog">
+					`
+				}, 1200);
+			} else {
+				alert('No more dogs in this breed');
+			}
 		});
 	});
 }
