@@ -62,10 +62,13 @@ const changeImage = (images) => {
 	const $changeCardBtns = $card.querySelectorAll('.js-change-card');
 	$changeCardBtns.forEach(btn => {
 		btn.addEventListener('click', () => {
-			const random = Math.floor(Math.random() * images.length);
-			$cardImage.innerHTML = `
-			<img src="${images[random]}" class="card-img" alt="Image of dog">
-			`
+			// Set time out to compensate with the animation duration
+			setTimeout(() => {
+				const random = Math.floor(Math.random() * images.length);
+				$cardImage.innerHTML = `
+				<img src="${images[random]}" class="card-img" alt="Image of dog">
+				`
+			}, 1200);
 		});
 	});
 }

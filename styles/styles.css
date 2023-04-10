@@ -134,9 +134,8 @@ body {
   border-radius: 3rem;
 }
 
-.card .card-content .card-btn-container .dislike-btn, .card .card-content .card-btn-container .like-btn {
-  width: 2.5rem;
-  height: 2.5rem;
+.card .card-content .card-btn-container .dislike-btn .btn-icon, .card .card-content .card-btn-container .like-btn .btn-icon {
+  font-size: 1.5rem;
 }
 
 .card .card-content .card-btn-container .dislike-btn {
