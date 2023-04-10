@@ -24,3 +24,4 @@ Even though I started with making a simple design in Figma, this project is main
 Ofcourse.. There are always things that I can improve! Here some feedback from myself:
 * The images of the Dog API have a bad resolution.
 * Can you send a parameter from one module to another? In this way it could be easier to split up the JS code into more modules.
+* The try/catch block is something you actually use in situations that could likely fail. That chance is in this case small, so the block is not necessarry. (I kept it just to show that I understand how it works)
