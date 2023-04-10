@@ -4,11 +4,19 @@ const $card = document.querySelector('.card');
 // NOTE: THIS IS THE MODERN APPROACH OF WORKING WITH PROMISES
 const fetchAndRenderData = async () => {
 	const endpoint = 'https://dog.ceo/api/breeds/list/all';
-	// await is waiting for the promise to be resolved and will execute the next code if the promise is resolved or returned
-	const response = await fetch(endpoint);
-	const data = await response.json();
-	createBreedList(data.message);
-}
+	// The try block is executed first
+	try {
+		// await is waiting for the promise to be resolved and will execute the next code if the promise is resolved or returned
+		const response = await fetch(endpoint);
+		const data = await response.json();
+		createBreedList(data.message);
+	} catch (e) {
+		// The catch block will run if the fetch (or try block) is failed
+		// You need to use (e) for the older browsers. This is the error parameter which contains info about the exact error
+		console.log('There was a problem fetching the breed list.');
+		console.log('Error:', e)
+	}
+} 
 
 const createBreedList = (breedList) => {
 	const $dropdownSelect = $dropdown.querySelector('.dropdown-select');
