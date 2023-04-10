@@ -1,6 +1,7 @@
 # Adopt a dog app
-![Schermafbeelding 2023-04-10 om 14 49 23](https://user-images.githubusercontent.com/45489420/230904431-043e030a-e3dc-4313-9d2f-7f627ba70bc3.png)
-Click [HERE](#) to check out the live version!
+<img src="https://user-images.githubusercontent.com/45489420/230904431-043e030a-e3dc-4313-9d2f-7f627ba70bc3.png" style="width: 280px; height: 100%;">
+
+Click [HERE](https://jenniferslagt.github.io/adopt-a-dog/) to check out the live version!
 
 ## Description
 An app (made for mobile) where you can possibly adopt a dog! Choose a dog breed, dislike or (super) like and get to meet your best buddy!
