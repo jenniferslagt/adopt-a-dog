@@ -63,14 +63,25 @@ const randomBoolean = () => {
 }
 
 const updateCardContent = () => {
+	changeGender();
+	generateAge();
+	generateDistance();
+	generateVacState();
+}
+
+const updateOnClick = () => {
 	const $dropdown = document.querySelector('.dropdown');
 	const $dropdownSelect = $dropdown.querySelector('.dropdown-select');
 	$dropdownSelect.addEventListener('change', () => {
-		changeGender();
-		generateAge();
-		generateDistance();
-		generateVacState();
+		updateCardContent();
 	});
+
+	const $changeCardBtns = $card.querySelectorAll('.js-change-card');
+	$changeCardBtns.forEach(btn => {
+		btn.addEventListener('click', () => {
+			updateCardContent();
+		})
+	})
 }
 
-export { updateCardContent };
+export { updateOnClick };
