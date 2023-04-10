@@ -1,5 +1,6 @@
 # Adopt a dog app
-<img src="file:///var/folders/0k/19__9mpx1nb5qwms289kpctc0000gn/T/TemporaryItems/NSIRD_screencaptureui_HakgbT/Schermafbeelding%202023-04-10%20om%2016.24.48.png" style="width: 280px; height: 100%;">
+<img src="https://user-images.githubusercontent.com/45489420/230920889-4a031237-6223-4420-8cc3-ce15ae241b9e.png" style="width: 280px; height: 100%;">
+
 
 Click [HERE](https://jenniferslagt.github.io/adopt-a-dog/) to check out the live version!
 
