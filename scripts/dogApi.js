@@ -25,7 +25,12 @@ const createBreedList = (breedList) => {
 	`
 
 	$dropdownSelect.addEventListener('change', () => {
-		loadByBreed($dropdownSelect.value);
+		if ($dropdownSelect.value == 'Choose your favorite breed') {
+			$card.classList.add('is-hidden');
+		} else {
+			$card.classList.remove('is-hidden');
+			loadByBreed($dropdownSelect.value);
+		}
 	});
 }
 

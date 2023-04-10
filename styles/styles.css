@@ -49,6 +49,10 @@ body {
   border-radius: 2rem;
 }
 
+.card.is-hidden {
+  display: none;
+}
+
 .card .card-img {
   width: 100%;
   height: 15rem;
