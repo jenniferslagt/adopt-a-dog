@@ -79,7 +79,10 @@ const updateOnClick = () => {
 	const $changeCardBtns = $card.querySelectorAll('.js-change-card');
 	$changeCardBtns.forEach(btn => {
 		btn.addEventListener('click', () => {
-			updateCardContent();
+			// Set time out to compensate with the animation duration
+			setTimeout(() => {
+				updateCardContent();
+			}, 1200);
 		})
 	})
 }

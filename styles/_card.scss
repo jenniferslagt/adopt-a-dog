@@ -62,8 +62,9 @@
 				border-radius: $radius-3;
 			}
 			.dislike-btn, .like-btn {
-				width: 2.5rem;
-				height: 2.5rem;
+				.btn-icon {
+					font-size: $size-4;
+				}
 			}
 			.dislike-btn {
 				background-color: $red-light;
